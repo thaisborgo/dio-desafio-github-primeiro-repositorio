@@ -1,1 +1,0 @@
-O GIT é um sistema distribuído de versionamento, que possui múltiplas cópias de si mesmo em lugares diferentes.
