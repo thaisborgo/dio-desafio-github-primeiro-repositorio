@@ -1,0 +1,27 @@
+## Estrutura Básica de um Elemento HTML
+
+<!DOCTYPE html> - Apenas diz ao navegador o que você está escrevendo.
+<html> - Abertura da tag, tudo que diz respeito ao documento estará dentro deste elemento.
+<head> - Neste, haverá metainformações, que um navegador necessita.
+<meta>
+<title></title> - Título na aba do navegador.
+</head>
+<body> - Conteúdo da página.
+</body>
+</html>
+
+## Novos Elementos do HTML5
+
+<section> - Sessão genérica de conteúdo, como uma lista de artigos.
+<header> - Cabeçário da página ou de parte da página (cabeçário de uma section).
+<article> - Conteúdo relevante na página.
+<aside> - Conteúdo relacionado ao conteúdo principal da página, normalmente representado por uma barra lateral.
+<footer> - Rodapé da página ou de parte da página.
+<h1>-<h6> - Representam importância de um título dentro de uma página. Atenção: Só pode haver UM H1 por página.
+<p> - Representa um parágrafo
+
+OBS.: <meta charset="utf-8"> - Recurso de programação - conjunto de caracteres utilizado para escrever um determinado documento, mas que possui funções específicas por causa de sua denominação.
+- Atributo utilizado para fazer a indicação de um formato de codificação definido por caracteres que foram utilizados em um determinado documento.
+<meta> - O meta é um elemento capaz de definir qualquer tipo de informação, mais conhecidas como metadados - que não podem ser definidos por qualquer outro elemento HTML.
+charset - é um atributo meta - tem a função importante de indicar o formato de codificação de alguns caracteres que são utilizados dentro do documento, p.e., ASCII, UTF-8 e ANSI.
+UTF-8 - maneira de viabilizar a programação e a leitura de documentos em qualquer tipo de idioma, ele está dentro do padrão Unicode e pode ser responsável por substituir um caractere estrangeiro por algo que seja legível em outro idioma.
