@@ -1,0 +1,293 @@
+## Estrutura Básica de um Elemento HTML
+
+<!DOCTYPE html> - Apenas diz ao navegador o que você está escrevendo.
+<html> - Abertura da tag, tudo que diz respeito ao documento estará dentro deste elemento.
+<head> 
+<meta> - Neste, haverá metainformações, que um navegador necessita.
+<title></title> - Título na aba do navegador.
+</head>
+<body> - Conteúdo da página.
+</body>
+</html>
+
+## Novos Elementos do HTML5
+- Antes para tudo se usava o <div>.
+<div> - container genérico do HTML para conteúdo de fluxo, de certa forma, não representa nada, pode ser utilizado para agrupar elementos para fins de estilo (usando #class ou .id), ou porque eles compartilham valores de atributos, como lang.
+
+- NOVOS ELEMENTOS:
+<section> - Sessão genérica de conteúdo, como uma lista de artigos.
+<header> - Cabeçário da página ou de parte da página (cabeçário de uma section).
+<article> - Conteúdo relevante na página.
+<aside> - Conteúdo relacionado ao conteúdo principal da página, normalmente representado por uma barra lateral.
+<footer> - Rodapé da página ou de parte da página. Fica antes do final de </body>
+<h1>-<h6> - Representam importância de um título dentro de uma página. Atenção: Só pode haver UM H1 por página.
+<p> - Representa um parágrafo
+
+OBS.: <meta charset="utf-8"> - Recurso de programação - conjunto de caracteres utilizado para escrever um determinado documento, mas que possui funções específicas por causa de sua denominação.
+- Atributo utilizado para fazer a indicação de um formato de codificação definido por caracteres que foram utilizados em um determinado documento.
+<meta> - O meta é um elemento capaz de definir qualquer tipo de informação, mais conhecidas como metadados - que não podem ser definidos por qualquer outro elemento HTML.
+charset - é um atributo meta - tem a função importante de indicar o formato de codificação de alguns caracteres que são utilizados dentro do documento, p.e., ASCII, UTF-8 e ANSI.
+UTF-8 - maneira de viabilizar a programação e a leitura de documentos em qualquer tipo de idioma, ele está dentro do padrão Unicode e pode ser responsável por substituir um caractere estrangeiro por algo que seja legível em outro idioma.
+
+## IMAGENS
+<img>
+<img src="link.jpg"> - caminho da imagem
+<img alt="descrição da foto">
+
+## LISTAS
+- Agrupar coleção de itens.
+<ul> - lista em que a ordem dos itens não é importante.
+<ol> - ordem dos itens é importante
+<li> - item da lista
+
+## CSS3
+- Regras de estilo para elementos ou grupos de elementos.
+
+## ID x CLASSE
+<header id="header" class="header"> </header>
+<header class="header"> </header>
+- No CSS3 uma classe é precedida por um ponto, e um id por um hash:
+
+.header {
+padding: 10px;
+}
+
+#header {
+padding: 15px;
+}
+
+ATENÇÃO: ID só pode ser usado uma vez em uma página.
+
+- Criar elemento .css, e no arquivo .html usar o seguinte código:
+<link rel="stylesheet" href="arquivo.css">
+- Stylesheet diz ao navegador que tipo de arquivo estamos adicionando.
+- Criar o arquivo .css no próprio editor.
+
+## TEXTOS E LINKS
+
+<h1>Título</h1>
+OBS: h2, h3, etc, classificam subtítulos, e outros títulos posteriores, se outras sessões/classes.
+
+<p>...</p> - para textos maiores, representa parágrafo, mas não suporta apenas textos, podem ser suportados outros conteúdos, como imagens, vídeos, etc.
+
+<a>Link</a>
+<a href="hiperlink">Nome do link</a>
+<a target="_blank">Link</> - target indica como o link será aberto, o valor _blank, neste caso, serve para indicar que a página do link deve abrir em uma nova aba do navegador.
+<a href="mailto:email@gmail.com">E-mail</a> - para indicar e-mail, deve ser colocado o prefixo mailto:, assim já abrirá o e-mail para enviar.
+
+## IMAGENS
+<img src="link.jpg"> - se imagem estiver na mesma pasta do arquivo html, é só por o nome da imagem.jpg.
+<img alt="Foto de Thaís"> - se não carregar a imagem no navegador, descreverá o que seria a imagem.
+
+## LISTAS
+<ul> lista desordenada, só em tópicos.
+<ol> lista ordenada, ordem dos itens é importante.
+<li> item da lista.
+
+## CONCEITOS BÁSICOS CSS3
+- Quando estamos fazendo o layout do site, o navegador representa cada elemento html como uma caixa retangular - BOX MODEL.
+- Com o CSS3, alteramos a aparência da caixa.
+* Margin - espaçamento entre elementos.
+* Border - circulam o padding e o conteúdo.
+* Padding - espaçamento entre a borda e o conteúdo.
+* Content - o que o bloco representa - texto, imagem, vídeo.
+
+## PADDING E MARGIN
+- Atribuindo valores diferentes.
+
+post {
+
+padding: 10px 5px;
+
+}
+
+- Na imagem acima, o primeiro valor se refere ao eixo Y, que se refere à parte superior e inferior, o segundo ao eixo X, lado esquerdo e direito.
+
+post {
+
+padding: 10px 5px 5px 0;
+
+}
+
+- No caso acima, há referência de um valor para cada lado, 15px para o topo, 10px para a direita, 5px para a parte inferior, e 0 para esquerda.
+OBS.: No valor zero, não é preciso identificar a unidade de medida.
+
+post {
+
+padding-top: 15px;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-left: 0;
+
+}
+
+- Acima, usamos unidades específicas para cada lado. Mais usado quando há um padding e uma margin com três lados iguais, e só um é diferente.
+
+# BACKGROUND
+
+.post {
+
+background-color: green;
+background-img: url("bg.png");
+background-position: top;
+
+}
+
+- COR: pode ser com o nome da cor em inglês, com código hexadecimal, ou só "background", com a cor em inglês ou hexadecimal.
+
+## BORDER
+- Pode se determinar a largura, a cor, o estilo.
+
+.post {
+
+border: 3px solid blue;
+border-top: 2px dotted green;
+border-right: 4px dashed pink;
+border-left: 4px dotted cyan;
+
+}
+
+.post {
+
+border: 3px solid green;
+
+}
+
+.post {
+
+border-width: 3px;
+border-color: #505050;
+border-style: solid;
+
+}
+
+- Códigos acima irão alterar todas as bordas, é a mesma regra, mas usadas de forma diferente.
+
+.post {
+
+border-top-width: 3px;
+border-top-color: blue;
+border-top-style: dotted;
+
+}
+
+- Acima, juntam-se os lados com os aspectos de uma borda, e cria-se uma regra ainda mais específica.
+
+## BORDER-RADIUS
+- Essa propriedade permite arredondar os cantos de um elemento.
+
+border-radius: 10px;
+border-radius: 50%;
+border-radius: 10% 20%;
+border-radius: 10% 20% 15% 22%;
+
+- Colocando apenas um valor, arredonda-se todos os cantos do elemento.
+- Regras de especificidade também servem para o border-radius.
+DICA: Transformar elemento quadrado em círculo: border-radius com 50%.
+
+## ESTILIZANDO TEXTOS
+- Font-family:
+
+#title {
+font-family: Verdana;
+}
+
+.post_title {
+font-family: Verdana, Arial;
+}
+
+- Na imagem acima, caso a primeira fonte não funciona, a segunda funciona como um backup.
+
+- Font-size:
+
+#title {
+font-size: 30px;
+}
+
+.post_title {
+font-size: 18px;
+}
+
+- Font-style:
+
+#title {
+font-style: normal;
+}
+
+.post_title {
+font-style: italic;
+}
+
+Atenção: É preciso verificar se a fonte escolhida tem adaptação para o itálico.
+
+- Font-weight:
+
+#title {
+font-weight: normal;
+}
+
+.subtitle {
+font-weight: bold;
+}
+
+- Bold é o negrito.
+
+- Text-transform:
+
+#title {
+text-transform: uppercase;
+} - Texto em caixa alta.
+
+.subtitle {
+text-transform: lowercase;
+} - Texto em caixa baixa.
+
+.post_title {
+text-transform: capítalize;
+} - Texto com todas as primeiras letras das palavras em maiúsculo.
+
+- Text-decoration:
+
+#title {
+text-decoration: underline;
+} - Linha abaixo da palavra.
+
+.subtitle {
+text-decoration: overline;
+} - Linha acima da palavra.
+
+.post_title {
+text-decoration: line-through;
+} - Linha ao centro, cortando a palavra.
+
+## ESTILIZANDO LISTAS
+
+ul {
+list-style-type: square;
+} - Símbolo vira um quadrado.
+
+ol {
+list-style-type: upper-roman;
+} - Símbolo de uma lista ordenada vira um algarismo romano maiúsculo.
+
+ul {
+list-style-type: "\1F44D";
+} - Mostra um emoji.
+
+ul {
+list-style-image: url("rocket.png");
+} - Coloca uma imagem.
+
+## DIMENSÃO E ALINHAMENTO
+
+width, height: ajustar largura e altura, em pixels, porcentagem.
+
+max-width, max-height: ajustar largura máxima e altura máxima que elementos podem ter. 
+
+margin: colocar espaçamento entre elementos, alinha elemento automaticamente.
+
+text align: alinhar textos, à esquerda com valor left, direita com valor right, centro com center, e justificar com justify.
+
+DICA: Alinhar imagens com largura do body - por width em 100% na classe da imagem.
+
+- margin: auto; - cria um espaçamento de um lado e de outro da borda, e assim terá uma margem que sempre deixa o conteúdo alinhado, independentemente do tamanho da tela. 
